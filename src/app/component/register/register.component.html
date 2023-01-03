@@ -1,0 +1,114 @@
+<div class="reg-tab">
+  <ul>
+    <li class="active"><a href="javascript:void(0);">account</a></li>
+    <li><a href="javascript:void(0);">company</a></li>
+    <li><a href="javascript:void(0);">payment</a></li>
+  </ul>
+</div>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-wrapper">
+    <h2 class="text-capt text-left">Account Information</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">first name</label>
+          <div class="input">
+            <input
+              type="text"
+              class="form-control"
+              autocomplete="off"
+              name="firstname"
+              [(ngModel)]="firstname"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">last name</label>
+          <div class="input">
+            <input
+              type="text"
+              required
+              name="lastname"
+              class="form-control"
+              autocomplete="off"
+              [(ngModel)]="lastname"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">email</label>
+          <div class="input">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              autocomplete="off"
+              [(ngModel)]="email"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">Phone</label>
+          <div class="input">
+            <input
+              type="number"
+              required
+              name="phone"
+              class="form-control"
+              autocomplete="off"
+              [(ngModel)]="phone"
+            />
+          </div>
+          <span id="email_hint"></span>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">password</label>
+          <div class="input pass-input">
+            <i></i>
+            <input
+              type="text"
+              name="password"
+              class="form-control"
+              autocomplete="off"
+              [(ngModel)]="password"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="">confirm password</label>
+          <div class="input pass-input">
+            <i></i>
+            <input
+              type="text"
+              name="confirmPassord"
+              class="form-control"
+              autocomplete="off"
+              [(ngModel)]="confirmPassword"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="form-group">
+          <div class="d-flex align-center flex-end">
+            <button class="btn btn-secondary">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
